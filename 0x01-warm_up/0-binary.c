@@ -20,8 +20,8 @@ void print_array(int *array, int left, int right)
 	printf("\n");
 }
 /**
- * binary_search - Function that finds a @value in an @array using binary search
- * algorithm
+ * binary_search - Function that finds a @value in an @array using binary
+ * search algorithm
  * @array: Array to be searched in
  * @size: size of the @array
  * @value: value to be searched for in the @array
@@ -42,7 +42,7 @@ int binary_search(int *array, size_t size, int value)
 		print_array(array, left, right);
 		mid = left + ((right - left) / 2);
 		if (value == array[mid])
-			return(mid);
+			return (mid);
 		if (value < array[mid])
 			right = mid - 1;
 		if (value > array[mid])
